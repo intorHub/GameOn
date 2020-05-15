@@ -1,0 +1,139 @@
+/* git check */
+.gameName{
+    color: rgb(92, 5, 70);
+    background-color: rgb(186, 204, 185);
+    text-align: center;
+    height: 50px;
+   /* margin-top: 150px;*/
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-left: 15px;
+    /*margin-right: 20px;*/
+    font-size: 40px;
+    border: 5px solid black;
+}
+/* קונטיינר לטבלה והמסך השחור */
+.gameContainer{
+     display: flex; 
+     box-sizing: border-box;
+     position: absolute;
+}
+
+/* מסך שחור */
+.gameScreen{
+    height: 600px;
+    width: 900px;
+    background-color: black;
+    margin-left: 15px;
+    position: relative;
+}
+
+#spinner {
+    text-align: center;
+    height: 25px;
+    width: 130px;
+    background-color: #0CB1C4;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    cursor: pointer;
+    position: relative;
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+     
+  }
+/* 
+#spinner.lvl2{
+    animation-duration: 1000ms;
+}
+
+#spinner.lvl3{
+    animation-duration: 10ms;
+} */
+
+
+  
+  /* the animation */
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+/* .spinner{
+    
+    left: 100px;
+    top: 100px;   
+    text-align: center;
+    position: absolute;
+    height: 25px;
+    width: 130px;
+    background-color: aqua;
+    animation-name: spin;
+    animation: linear;    
+    animation-delay: 3s;
+    animation-duration: 60s;
+} */
+
+/* 
+ .spinner.spin{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+    
+}  */
+
+
+
+
+
+.tableContainer{
+    /* margin-left: 30px; */
+    background-color: aqua;
+    height: 600px;
+    right: 180px;
+    /* position: relative; */
+    /* position: absolute; */
+
+}
+
+.gameContainer{
+    position: absolute;
+    height: 650px;
+    width: 100%;
+}
+
+
+.score , .level , .missedClicks , .timer {
+    height: 50px;
+    background-color: rgb(195, 233, 233);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.highScores{
+    height: 55px;
+    background-color: rgb(195, 233, 233);
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.rec , #bestPlayers{
+    background-color: bisque;
+    color: green;
+}
+/*  
+div{
+    border: 1px red solid;
+}  */
